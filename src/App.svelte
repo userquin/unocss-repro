@@ -5,14 +5,16 @@
   import { DataTable } from "carbon-components-svelte";
 </script>
 
-<DataTable
-  headers={[
+<div class="m-4 grid grid-cols-2 gap-4">
+  <div class="row-[1]">Table</div>
+  <DataTable
+      headers={[
     { key: "name", value: "Name" },
     { key: "protocol", value: "Protocol" },
     { key: "port", value: "Port" },
     { key: "rule", value: "Rule" },
   ]}
-  rows={[
+      rows={[
     {
       id: "a",
       name: "Load Balancer 3",
@@ -56,4 +58,5 @@
       rule: "DNS delegation",
     },
   ]}
-/>
+  />
+</div>
